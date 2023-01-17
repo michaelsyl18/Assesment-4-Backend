@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="./styles.css">
+  <head>
+    <link rel="shortcut icon" href="#">
+    <title>Back End Assessment</title>
+  </head>
+
+  <label for="start">Start date:</label>
+
+  <input type="date" id="start" name="trip-start"
+         value="2023-01-15"
+         min="2023-01-01" max="2023-12-31">
+         <br>
+
+
+  <body class="container">
+    <button id="complimentButton">Get a compliment!
+    </button>
+    <br>
+    <button id="fortuneButton">Fortune Teller</button>
+    
+
+    <form id="text-form">
+      What would you like to achieve today? <input type="text" id="text-form">
+      <button>Lets go!</button>
+    </form>
+
+    <div id="tasklist-container"></div>
+
+    <form id="text-form">
+      Where do you see yourself in 5 years? <input type="text">
+      <button>Submit</button>
+    </form>
+
+    <div id="tasklist-container"></div>
+    <br>
+
+
+    <label for="goals">Want some tips and tricks to set your goals?</label>
+      <select name="goals" id="goals" onchange="displayQuotes()">
+        <option>Select</option>
+        <option value="tip1">Tip 1</option>
+        <option value="tip2">Tip 2</option>
+        <option value="tip3">Tip 3</option>
+      </select>
+      <br>
+
+
+    <div>
+      <button id="inspiro-btn">Get some inspiration!</button>
+      <p id="inspiro-container"></p>
+    </div>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
