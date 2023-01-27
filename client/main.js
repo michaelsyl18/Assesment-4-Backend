@@ -2,8 +2,8 @@ const inputText = document.getElementById("input-text");
 const textForm = document.getElementById("text-form");
 const inspiroContainer = document.getElementById("inspiro-container");
 const inspiroBtn = document.getElementById("inspiro-btn");
-const complimentButton = document.getElementById("complimentButton")
-const fortuneButton = document.getElementById("fortuneButton")
+const complimentButton = document.getElementById("complimentButton");
+const fortuneButton = document.getElementById("fortuneButton");
 
 document.getElementById("complimentButton").onclick = function () {
   axios.get("http://localhost:4000/api/compliment")
